@@ -11,7 +11,7 @@
   "author": "Zenthae",
   "license": "ISC",
   "dependencies": {
-    "adm-zip": "^0.5.9",
+    "jszip": "^3.10.1",
     "xml-js": "^1.6.11"
   },
   "devDependencies": {
