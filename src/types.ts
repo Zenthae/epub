@@ -11,6 +11,21 @@ export type InputDataType =
   | NodeJS.ReadableStream;
 
 export interface EBook {
-  title: string;
-  // ...
+  /**
+   * Book metadata, extracted from content.opf
+   */
+  metadata: {
+    /**
+     * Book title
+     */
+    title: string;
+    /**
+     * Book language
+     */
+    language: string;
+    /**
+     * Book author
+     */
+    creator: string;
+  };
 }
