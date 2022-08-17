@@ -7,18 +7,13 @@ import { Archive } from '@app/types';
  * @returns ebook
  */
 export async function parse(archive: Archive) {
-  const minetype = archive.file(/mimetype/)[0];
-
-  if ((await minetype.async('string')) !== 'application/epub+zip')
-    throw new Error('Malformed .epub');
-
   return {};
 }
 
 export async function parseXXX(archive: Archive) {}
 
 /**
- * Parse the content of mimetype file
+ * Search for the MIMETYPE File and parse its content
  * @param archive
  * @returns content of file or null if no file present
  */
